@@ -1,3 +1,15 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class DBManager {
-    private final String DBName = "StudentApp";
+    Connection connection;
+
+    public DBManager(Connection c) {
+        connection = c;
+    }
+
+
+
+
 }
