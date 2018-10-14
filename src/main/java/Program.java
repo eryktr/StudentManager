@@ -5,7 +5,10 @@ public class Program {
     {
         ConnectionBuilder cb = new ConnectionBuilder();
         DBManager db = new DBManager(cb);
-        db.addStudent(new Student("Test", "Student", Faculty.W11, 5, 21));
-        System.out.println("I work");
+        UserInterface ui = new UserInterface(db);
+        ui.start();
+
+
+
     }
 }

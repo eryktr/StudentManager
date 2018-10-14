@@ -2,7 +2,7 @@ import com.mysql.cj.jdbc.MysqlDataSource;
 
 import java.sql.*;
 
-public class ConnectionBuilder {
+public final class ConnectionBuilder {
     public Connection buildConnection() {
         String user = ConnectionInfo.DBUser;
         String host = ConnectionInfo.DBHost;
