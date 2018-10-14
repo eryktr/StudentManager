@@ -45,11 +45,14 @@ public final class DBManager {
         try {
             Statement st = c.createStatement();
             ResultSet rs = st.executeQuery(query);
+            System.out.println("--------------------");
             while(rs.next()) {
                 System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " +
                         rs.getString(3) + " " + rs.getString(4) + " " +
                         rs.getInt(5) + " " + rs.getInt(6));
             }
+            System.out.println("--------------------");
+            System.out.println();
         }
         catch (Exception ex) {
             System.out.println("Error: "+ex.getMessage());

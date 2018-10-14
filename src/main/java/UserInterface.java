@@ -63,6 +63,10 @@ public final class UserInterface {
             case Display:
                 DisplayStudents();
                 break;
+
+            case Quit:
+                System.exit(1);
+                break;
         }
     }
 
@@ -88,15 +92,18 @@ public final class UserInterface {
     }
 
     public void DeleteStudent() {
-
+        int id;
+        System.out.print("Id: ");
+        id = scanner.nextInt();
+        dbManager.removeStudent(id);
     }
 
     public void DisplayStudents() {
-
+        dbManager.displayStudents();
     }
 
     public void DoNothing() {
-
+        return;
     }
 
 

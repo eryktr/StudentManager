@@ -22,7 +22,7 @@ public final class QueryGenerator {
     public static final String generateSelectQuery()
     {
         String tableName = ConnectionInfo.StudentTableName;
-        String query = "SELECT * FROM " + tableName +"; ";
+        String query = "SELECT * FROM " + tableName +";";
         return query;
     }
 }
