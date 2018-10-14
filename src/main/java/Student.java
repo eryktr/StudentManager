@@ -6,11 +6,11 @@ public class Student {
     private int semester;
     private int age;
 
-    public Student(String fn, String ln, Faculty fac, int sem, int a)
-    {
+    public Student(String fn, String ln, Faculty fac, int sem, int a) {
         first_name = fn;
         last_name = ln;
         faculty = fac;
+        semester = sem;
         age = a;
     }
 
@@ -29,6 +29,8 @@ public class Student {
     public int getAge() {
         return age;
     }
+
+    public Faculty getFaculty() {return faculty;}
 
 
 

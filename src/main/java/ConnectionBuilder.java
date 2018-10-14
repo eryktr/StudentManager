@@ -19,10 +19,10 @@ public class ConnectionBuilder {
             ds.setUseSSL(false);
             ds.setServerTimezone("GMT+2");
             c = ds.getConnection();
-            Statement smt = c.createStatement();
-        } catch(SQLException ex)
-        {
+
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
+
         }
 
         return c;
