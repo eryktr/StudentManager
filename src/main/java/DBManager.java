@@ -1,7 +1,7 @@
 import java.sql.*;
 
 public final class DBManager {
-    ConnectionBuilder connectionBuilder;
+    private ConnectionBuilder connectionBuilder;
 
     public DBManager(ConnectionBuilder cb) {
         connectionBuilder = cb;

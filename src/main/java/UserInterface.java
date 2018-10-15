@@ -4,6 +4,7 @@ public final class UserInterface {
 
     private final DBManager dbManager;
     private final Scanner scanner;
+    private final int test = 7;
     private enum Action {Add, Delete, Display, Quit, Nothing}
 
 

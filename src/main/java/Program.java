@@ -7,8 +7,5 @@ public class Program {
         DBManager db = new DBManager(cb);
         UserInterface ui = new UserInterface(db);
         ui.start();
-
-
-
     }
 }

@@ -22,7 +22,6 @@ public final class ConnectionBuilder {
 
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-
         }
 
         return c;
